@@ -1,4 +1,8 @@
-﻿using System;
+﻿//biblioteca do csharp
+/*
+ comentário de bloco
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,5 +32,6 @@ namespace ProjetoLojaABC
             abrir.Show();
             this.Hide();
         }
+       
     }
 }
