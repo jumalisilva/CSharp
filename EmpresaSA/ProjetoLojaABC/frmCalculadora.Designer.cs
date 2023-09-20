@@ -176,7 +176,7 @@ namespace ProjetoLojaABC
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(178, 42);
             this.btnCalcular.TabIndex = 7;
-            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.Text = "&Calcular";
             this.btnCalcular.UseVisualStyleBackColor = false;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
@@ -188,8 +188,9 @@ namespace ProjetoLojaABC
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(178, 42);
             this.btnLimpar.TabIndex = 8;
-            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.Text = "&Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnSair
             // 
@@ -199,7 +200,7 @@ namespace ProjetoLojaABC
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(178, 42);
             this.btnSair.TabIndex = 9;
-            this.btnSair.Text = "Sair";
+            this.btnSair.Text = "&Sair";
             this.btnSair.UseVisualStyleBackColor = false;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
