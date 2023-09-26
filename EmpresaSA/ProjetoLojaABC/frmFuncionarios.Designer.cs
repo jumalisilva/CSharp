@@ -31,7 +31,7 @@ namespace ProjetoLojaABC
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFuncionarios));
             this.gpbFuncionarios = new System.Windows.Forms.GroupBox();
-            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.txtBairro = new System.Windows.Forms.TextBox();
             this.lblBairro = new System.Windows.Forms.Label();
             this.cbbEstado = new System.Windows.Forms.ComboBox();
             this.lblEstado = new System.Windows.Forms.Label();
@@ -67,7 +67,7 @@ namespace ProjetoLojaABC
             // 
             // gpbFuncionarios
             // 
-            this.gpbFuncionarios.Controls.Add(this.txtEstado);
+            this.gpbFuncionarios.Controls.Add(this.txtBairro);
             this.gpbFuncionarios.Controls.Add(this.lblBairro);
             this.gpbFuncionarios.Controls.Add(this.cbbEstado);
             this.gpbFuncionarios.Controls.Add(this.lblEstado);
@@ -97,13 +97,13 @@ namespace ProjetoLojaABC
             this.gpbFuncionarios.TabStop = false;
             this.gpbFuncionarios.Text = "Dados";
             // 
-            // txtEstado
+            // txtBairro
             // 
-            this.txtEstado.Location = new System.Drawing.Point(212, 183);
-            this.txtEstado.MaxLength = 100;
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(111, 24);
-            this.txtEstado.TabIndex = 9;
+            this.txtBairro.Location = new System.Drawing.Point(212, 183);
+            this.txtBairro.MaxLength = 100;
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(111, 24);
+            this.txtBairro.TabIndex = 9;
             // 
             // lblBairro
             // 
@@ -316,6 +316,7 @@ namespace ProjetoLojaABC
             this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnLimpar
             // 
@@ -329,6 +330,7 @@ namespace ProjetoLojaABC
             this.btnLimpar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnPesquisar
             // 
@@ -342,6 +344,7 @@ namespace ProjetoLojaABC
             this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // btnExcluir
             // 
@@ -381,6 +384,7 @@ namespace ProjetoLojaABC
             this.btnCadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCadastrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnNovo
             // 
@@ -394,6 +398,7 @@ namespace ProjetoLojaABC
             this.btnNovo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // frmFuncionarios
             // 
@@ -408,6 +413,7 @@ namespace ProjetoLojaABC
             this.Name = "frmFuncionarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Loja - Funcionários";
+            this.Load += new System.EventHandler(this.frmFuncionarios_Load);
             this.gpbFuncionarios.ResumeLayout(false);
             this.gpbFuncionarios.PerformLayout();
             this.pnlCrud.ResumeLayout(false);
@@ -431,7 +437,7 @@ namespace ProjetoLojaABC
         private System.Windows.Forms.Label lblCEP;
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label lblEndereco;
-        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.Label lblBairro;
         private System.Windows.Forms.ComboBox cbbEstado;
         private System.Windows.Forms.Label lblEstado;
