@@ -31,13 +31,13 @@ namespace ProjetoLojaABC
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPesquisarFuncionarios));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.lblDescricao = new System.Windows.Forms.Label();
+            this.rdbNome = new System.Windows.Forms.RadioButton();
+            this.rdbCodigo = new System.Windows.Forms.RadioButton();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.ltbPesquisar = new System.Windows.Forms.ListBox();
-            this.rdbCodigo = new System.Windows.Forms.RadioButton();
-            this.rdbNome = new System.Windows.Forms.RadioButton();
-            this.lblDescricao = new System.Windows.Forms.Label();
-            this.txtDescricao = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,6 +54,44 @@ namespace ProjetoLojaABC
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pesquisar por:";
+            // 
+            // txtDescricao
+            // 
+            this.txtDescricao.Location = new System.Drawing.Point(180, 77);
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(363, 24);
+            this.txtDescricao.TabIndex = 3;
+            // 
+            // lblDescricao
+            // 
+            this.lblDescricao.AutoSize = true;
+            this.lblDescricao.Location = new System.Drawing.Point(98, 80);
+            this.lblDescricao.Name = "lblDescricao";
+            this.lblDescricao.Size = new System.Drawing.Size(76, 18);
+            this.lblDescricao.TabIndex = 2;
+            this.lblDescricao.Text = "Descrição";
+            // 
+            // rdbNome
+            // 
+            this.rdbNome.AutoSize = true;
+            this.rdbNome.Location = new System.Drawing.Point(210, 28);
+            this.rdbNome.Name = "rdbNome";
+            this.rdbNome.Size = new System.Drawing.Size(67, 22);
+            this.rdbNome.TabIndex = 2;
+            this.rdbNome.Text = "Nome";
+            this.rdbNome.UseVisualStyleBackColor = true;
+            this.rdbNome.CheckedChanged += new System.EventHandler(this.rdbNome_CheckedChanged);
+            // 
+            // rdbCodigo
+            // 
+            this.rdbCodigo.AutoSize = true;
+            this.rdbCodigo.Location = new System.Drawing.Point(101, 28);
+            this.rdbCodigo.Name = "rdbCodigo";
+            this.rdbCodigo.Size = new System.Drawing.Size(74, 22);
+            this.rdbCodigo.TabIndex = 1;
+            this.rdbCodigo.Text = "Código";
+            this.rdbCodigo.UseVisualStyleBackColor = true;
+            this.rdbCodigo.CheckedChanged += new System.EventHandler(this.rdbCodigo_CheckedChanged);
             // 
             // btnPesquisar
             // 
@@ -93,44 +131,7 @@ namespace ProjetoLojaABC
             this.ltbPesquisar.Name = "ltbPesquisar";
             this.ltbPesquisar.Size = new System.Drawing.Size(603, 148);
             this.ltbPesquisar.TabIndex = 3;
-            // 
-            // rdbCodigo
-            // 
-            this.rdbCodigo.AutoSize = true;
-            this.rdbCodigo.Location = new System.Drawing.Point(101, 28);
-            this.rdbCodigo.Name = "rdbCodigo";
-            this.rdbCodigo.Size = new System.Drawing.Size(74, 22);
-            this.rdbCodigo.TabIndex = 1;
-            this.rdbCodigo.Text = "Código";
-            this.rdbCodigo.UseVisualStyleBackColor = true;
-            this.rdbCodigo.CheckedChanged += new System.EventHandler(this.rdbCodigo_CheckedChanged);
-            // 
-            // rdbNome
-            // 
-            this.rdbNome.AutoSize = true;
-            this.rdbNome.Location = new System.Drawing.Point(210, 28);
-            this.rdbNome.Name = "rdbNome";
-            this.rdbNome.Size = new System.Drawing.Size(67, 22);
-            this.rdbNome.TabIndex = 2;
-            this.rdbNome.Text = "Nome";
-            this.rdbNome.UseVisualStyleBackColor = true;
-            this.rdbNome.CheckedChanged += new System.EventHandler(this.rdbNome_CheckedChanged);
-            // 
-            // lblDescricao
-            // 
-            this.lblDescricao.AutoSize = true;
-            this.lblDescricao.Location = new System.Drawing.Point(98, 80);
-            this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(76, 18);
-            this.lblDescricao.TabIndex = 2;
-            this.lblDescricao.Text = "Descrição";
-            // 
-            // txtDescricao
-            // 
-            this.txtDescricao.Location = new System.Drawing.Point(180, 77);
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(363, 24);
-            this.txtDescricao.TabIndex = 3;
+            this.ltbPesquisar.SelectedIndexChanged += new System.EventHandler(this.ltbPesquisar_SelectedIndexChanged);
             // 
             // frmPesquisarFuncionarios
             // 
