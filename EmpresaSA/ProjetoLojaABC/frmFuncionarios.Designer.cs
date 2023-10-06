@@ -406,7 +406,7 @@ namespace ProjetoLojaABC
             // 
             // btnConectar
             // 
-            this.btnConectar.Location = new System.Drawing.Point(374, 432);
+            this.btnConectar.Location = new System.Drawing.Point(325, 431);
             this.btnConectar.Name = "btnConectar";
             this.btnConectar.Size = new System.Drawing.Size(122, 43);
             this.btnConectar.TabIndex = 13;
