@@ -245,7 +245,6 @@ namespace ProjetoLojaABC
             Conexao.fecharConexao();
         }
 
-
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             if (txtNome.Text.Equals("") || txtEmail.Text.Equals("") || txtEndereco.Text.Equals("") ||
@@ -370,7 +369,6 @@ namespace ProjetoLojaABC
             Conexao.fecharConexao();
 
         }
-
 
         private void mskCEP_KeyDown(object sender, KeyEventArgs e)
         {
