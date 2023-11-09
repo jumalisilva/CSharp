@@ -26,7 +26,7 @@ namespace ProjetoLojaABC
             InitializeComponent();
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
             frmLogin abrir = new frmLogin();
             abrir.Show();
